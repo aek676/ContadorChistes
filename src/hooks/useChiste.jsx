@@ -11,7 +11,7 @@ export const useChiste = () => {
       );
       const data = await response.json();
       if (!data.error) {
-        setChiste(data.joker || `${data.setup} - ${data.delivery}`);
+        setChiste(data.joke || `${data.setup} - ${data.delivery}`);
       } else {
         setError("No se pudo obtener el chiste.");
       }
